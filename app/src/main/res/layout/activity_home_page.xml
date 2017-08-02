@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
     tools:context="com.utsa.team8_sum_2017.europa.HomePage">
 
     <TextView
@@ -24,13 +25,10 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/SignInButton"
-        android:layout_marginEnd="49dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="-55dp"
-        android:layout_marginRight="89dp" />
+        app:layout_constraintLeft_toRightOf="@+id/PasswordText" />
 
     <EditText
         android:id="@+id/EmailBox"
@@ -51,26 +49,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign In"
-        tools:layout_constraintRight_creator="1"
+        android:onClick="onClick()"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/RegisterButton"
-        app:layout_constraintRight_toRightOf="@+id/RegisterButton"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="14dp"
-        app:layout_constraintLeft_toLeftOf="@+id/RegisterButton" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/PasswordText"
+        app:layout_constraintHorizontal_bias="0.312" />
+
 
     <Button
         android:id="@+id/RegisterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Register"
-        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="27dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="93dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.587" />
 
     <TextView
         android:id="@+id/EmailText"
