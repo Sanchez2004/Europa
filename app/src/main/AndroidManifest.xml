@@ -16,15 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data
-            android:name="com.parse.SERVER_URL"
-            android:value="europaradio.us-east-1.elasticbeanstalk.com/parse" />
-        <meta-data
-            android:name="com.parse.APPLICATION_ID"
-            android:value="EuropaRadioApp" />
-        <meta-data
-            android:name="com.parse.MASTER_KEY"
-            android:value="9EA1F522CC05F04BEC0F60A3595D9A55676D3F0EC0E42AF46B6D00C8BA9C0714" />
+
     </application>
 
 </manifest>
