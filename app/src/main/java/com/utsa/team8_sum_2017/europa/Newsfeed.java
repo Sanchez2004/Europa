@@ -6,11 +6,15 @@ import java.util.Stack;
 public class Newsfeed {
     private Stack<NewsArticle> articles = new Stack<>();
 
+
     //This should pull the new newsarticles off the server somehow
-    public void addNews(){
+    public void addNews(String message, String title){
         NewsArticle news = new NewsArticle();
+        news.setMessage(message);
+        news.setTitle(title);
         articles.push(news);
     }
+
 
     public NewsArticle getNews(){
         if(!articles.empty()) {
