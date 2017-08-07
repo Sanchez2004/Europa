@@ -5,7 +5,7 @@ public class Model {
 
     //Will need to have this updated from the server eventually. using static messages until then
     Newsfeed feed;
-  //  feed.addNews("message attempt 1", "title attempt 1");
+    //feed.addNews("message attempt 1", "title attempt 1");
    // feed.addNews("message attempt 2", "title attempt 2");
    // feed.addNews("message attempt 3", "title attempt 3");
   //  feed.addNews("message attempt 4", "title attempt 4");

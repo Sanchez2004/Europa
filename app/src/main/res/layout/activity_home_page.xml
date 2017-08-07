@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:text="Sign In"
         android:onClick="onClick()"
-        tools:layout_editor_absoluteY="397dp"
-        tools:layout_editor_absoluteX="148dp" />
+        tools:layout_editor_absoluteY="393dp"
+        tools:layout_editor_absoluteX="152dp" />
 
 
 </android.support.constraint.ConstraintLayout>
