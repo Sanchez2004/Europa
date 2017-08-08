@@ -11,10 +11,14 @@
         android:id="@+id/SignInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:onClick="onClick()"
-        tools:layout_editor_absoluteY="393dp"
-        tools:layout_editor_absoluteX="152dp" />
+        android:onClick="sign_In_button"
+        android:text="@string/sign_in_button_name"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="89dp" />
 
 
 </android.support.constraint.ConstraintLayout>

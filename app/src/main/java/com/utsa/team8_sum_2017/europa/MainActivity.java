@@ -1,20 +1,24 @@
 package com.utsa.team8_sum_2017.europa;
 
 
+import android.content.Intent;
+import android.support.annotation.IntDef;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Model model = new Model();
+    //Model model = new Model();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.news_page);
+        setContentView(R.layout.activity_home_page);
 
+        /*
         TextView textView19 = (TextView) findViewById(R.id.textView19);
         textView19.setText(model.getNews().getMessage());
         TextView textView20 = (TextView) findViewById(R.id.textView20);
@@ -29,8 +33,14 @@ public class MainActivity extends AppCompatActivity {
         textView24.setText(model.getNews().getMessage());
         TextView textView25 = (TextView) findViewById(R.id.textView25);
         textView25.setText(model.getNews().getMessage());
+        */
 
 
+    }
 
+    //This is what the button on the login activity calls when pushed. -David.
+    public void sign_In_button(View v){
+        Intent temp_intent = new Intent(this, MusicPlayer.class);
+        startActivity( temp_intent );
     }
 }
