@@ -7,6 +7,8 @@ public class NewsArticle {
     private String message;
     private String hyperlink;
 
+    private int i;
+
     public void setTitle(String t){title=t;}
     public void setMessage(String m){message=m;}
     public void setHyperlink(String h){hyperlink = h;}
@@ -15,6 +17,10 @@ public class NewsArticle {
     public String getMessage(){return message;}
     public String getHyperlink(){return hyperlink;}
 
+    public void NewsArticle(String mess, String title2){
+        message = mess;
+        title = title2;
+    }
 
 }
 
