@@ -4,7 +4,7 @@ package com.utsa.team8_sum_2017.europa;
 public class Model {
 
     //Will need to have this updated from the server eventually. using static messages until then
-    Newsfeed feed;
+    //Newsfeed feed;
     //feed.addNews("message attempt 1", "title attempt 1");
    // feed.addNews("message attempt 2", "title attempt 2");
    // feed.addNews("message attempt 3", "title attempt 3");
@@ -14,10 +14,9 @@ public class Model {
   //  feed.addNews("message attempt 7", "title attempt 7");
 
 
-
-    public NewsArticle getNews(){
-        return feed.getNews();
-    }
+    //public NewsArticle getNews(){
+    //    return feed.getNews();
+    //}
 
 
 }
