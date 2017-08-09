@@ -5,238 +5,384 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_green_dark"
-    tools:context="com.utsa.team8_sum_2017.europa.AlarmPage">
+    tools:context="com.utsa.team8_sum_2017.europa.MainActivity">
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alarm"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:text="Title:"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginStart="119dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist:"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="418dp"
+        android:layout_marginStart="119dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publisher:"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintRight_toRightOf="@+id/textView26"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/textView26"
+        app:layout_constraintHorizontal_bias="0.524"
+        android:layout_marginBottom="7dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year:"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="119dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="119dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating:"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.348" />
+
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="go_home"
+        android:text="@string/music_page"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Alarm"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="253dp" />
-
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="249dp"
-        android:layout_height="48dp"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="447dp" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="58dp"
-        android:layout_height="34dp"
-        android:text="ToggleButton"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="84dp" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="58dp"
-        android:layout_height="34dp"
-        android:text="ToggleButton"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="219dp" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="58dp"
-        android:layout_height="34dp"
-        android:text="ToggleButton"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="84dp" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="58dp"
-        android:layout_height="34dp"
-        android:text="ToggleButton"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="58dp"
-        android:layout_height="34dp"
-        android:text="ToggleButton"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="58dp"
-        android:layout_height="34dp"
-        android:text="ToggleButton"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="58dp"
-        android:layout_height="34dp"
-        android:text="ToggleButton"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="84dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="104dp"
-        android:layout_height="114dp"
-        android:text="Album Art"
-        tools:layout_editor_absoluteY="323dp"
-        tools:layout_editor_absoluteX="12dp" />
+        android:layout_marginStart="19dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton8"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="19dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="79dp"
-        android:layout_height="0dp"
-        android:text="12:00"
-        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="74dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Su"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="118dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="M"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="118dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tu"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="118dp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="W"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="207dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Th"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="207dp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="F"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="200dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sa"
-        tools:layout_editor_absoluteX="320dp"
-        tools:layout_editor_absoluteY="264dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Title:"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="323dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Artist:"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="350dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Publisher:"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="375dp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Year:"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="403dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rating:"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="430dp" />
+        android:id="@+id/textView"
+        android:layout_width="103dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginTop="1dp"
+        android:text="Alarm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Off"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:text="On"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Switch"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintLeft_toRightOf="@+id/switch1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="103dp"
+        android:text="12:00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="104dp"
-        android:layout_height="22dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="177dp" />
+        android:layout_width="89dp"
+        android:layout_height="13dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="105dp"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="106dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volume"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="207dp" />
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Switch"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/seekBar" />
 
-    <Button
-        android:id="@+id/button3"
-        style="@android:style/Widget.DeviceDefault.Button.Inset"
+    <ToggleButton
+        android:id="@+id/toggleButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:onClick="go_home"
-        android:text="@string/music_page"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="ToggleButton"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintRight_toRightOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        android:layout_marginRight="9dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginRight="16dp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="31dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/toggleButton5"
+        android:layout_marginTop="31dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton5"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton5" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/toggleButton6"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton6"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton6" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/toggleButton7"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton7"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton7" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton4"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton5"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton5"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton6"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton6"
+        android:layout_marginLeft="2dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Th"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton7"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintRight_toLeftOf="@+id/button"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton10"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton8"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton8"
+        android:layout_marginLeft="2dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Su"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton9"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/toggleButton9" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Album art here"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintRight_toRightOf="@+id/textView24"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView24"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp" />
 
 
 </android.support.constraint.ConstraintLayout>
