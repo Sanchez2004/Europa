@@ -6,19 +6,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 /**
- * Created by David on 8/9/2017.
+ * Created by Daivd. on 8/9/2017.
  */
 
-//Made to get the alarm_page into the manifest. -David.
-public class AlarmActivitySupport extends AppCompatActivity {
+//Made to get the news_page into the manifest. -David.
+public class NewsFeedSupport extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.alarm_page);
+        setContentView(R.layout.news_page);
     }
 
     public void go_home(View v){
-         Intent temp_intent = new Intent(this, MusicPlayer.class);
-         startActivity( temp_intent );
+        Intent temp_intent = new Intent(this, MusicPlayer.class);
+        startActivity( temp_intent );
     }
 }

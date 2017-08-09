@@ -99,7 +99,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="79dp"
-        android:layout_height="61dp"
+        android:layout_height="0dp"
         android:text="12:00"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
         tools:layout_editor_absoluteX="44dp"
@@ -223,6 +223,20 @@
         android:text="Volume"
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="207dp" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="go_home"
+        android:text="@string/music_page"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -13,7 +13,7 @@
         android:layout_height="200dp"
         android:layout_marginTop="52dp"
         android:src="@drawable/abc_btn_radio_material"
-        android:layout_below="@+id/toolbar"
+        <!--android:layout_below="@+id/toolbar"-->
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -25,5 +25,26 @@
         android:layout_marginTop="70dp"
         android:text="@string/stream_music_button_name"
         android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/logo"
+        android:text="@string/news_feed_page"
+        android:onClick="to_news_page" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignEnd="@+id/logo"
+        android:layout_alignRight="@+id/logo"
+        android:onClick="to_alarms_page"
+        android:text="@string/alarm_page" />
 
 </RelativeLayout>

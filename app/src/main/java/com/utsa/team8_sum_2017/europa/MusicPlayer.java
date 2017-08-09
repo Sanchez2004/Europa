@@ -173,7 +173,19 @@ public class MusicPlayer extends AppCompatActivity {
     }
 
     //------------------------------
-    //New code for the tabs. -David.
+    //New code. -David.
     //------------------------------
+
+    //Belongs to button 5 in music_player.xml. -Daivd.
+    public void to_news_page(View v){
+        Intent temp_intent = new Intent(this, NewsFeedSupport.class);
+        startActivity( temp_intent );
+    }
+
+    //belongs to button 6 in music_player.xml. -David.
+    public void to_alarms_page(View v){
+        Intent temp_intent = new Intent(this, AlarmActivitySupport.class);
+        startActivity( temp_intent );
+    }
 
 }

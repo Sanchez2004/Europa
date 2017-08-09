@@ -2,4 +2,7 @@
     <string name="app_name">Europa</string>
     <string name="sign_in_button_name">Sign In</string>
     <string name="stream_music_button_name">Stream Music</string>
+    <string name="alarm_page">Alarms</string>
+    <string name="news_feed_page">News</string>
+    <string name="music_page">Home</string>
 </resources>

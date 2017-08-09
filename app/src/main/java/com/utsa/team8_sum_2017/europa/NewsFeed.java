@@ -10,15 +10,9 @@ import java.util.Stack;
 //Added extends and onCrate so it can be added to manifest, should be changed later. -Daivd.
 //
  */
-public class NewsFeed extends AppCompatActivity {
+public class NewsFeed{
 
     private Stack<NewsArticle> articles = new Stack<>();
-
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.music_player);
-    }
-
 
     public NewsFeed(){
 
