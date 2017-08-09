@@ -13,8 +13,8 @@
         android:layout_height="200dp"
         android:layout_marginTop="52dp"
         android:src="@drawable/abc_btn_radio_material"
-        <!--android:layout_below="@+id/toolbar"-->
         android:layout_centerHorizontal="true" />
+        <!--android:layout_below="@+id/toolbar"-->
 
     <Button
         android:id="@+id/audioStreamBtn"
