@@ -141,7 +141,7 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:text="On"
-        android:textAppearance="@android:style/TextAppearance.Material.Widget.Switch"
+        android:textAppearance="@android:style/TextAppearance.Medium"
         app:layout_constraintBottom_toBottomOf="@+id/switch1"
         app:layout_constraintLeft_toRightOf="@+id/switch1"
         tools:layout_constraintBottom_creator="1"
@@ -182,11 +182,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volume"
-        android:textAppearance="@android:style/TextAppearance.Material.Widget.Switch"
-        tools:layout_constraintTop_creator="1"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintLeft_toLeftOf="@+id/seekBar"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/seekBar" />
+        tools:layout_constraintTop_creator="1" />
 
     <ToggleButton
         android:id="@+id/toggleButton4"
