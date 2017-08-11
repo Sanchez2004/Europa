@@ -27,12 +27,12 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/logo"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/logo"
         android:onClick="to_news_page"
         android:text="@string/news_feed_page"
-        android:textColor="@android:color/holo_green_dark" />
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="40dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignStart="@+id/logo" />
 
     <Button
         android:id="@+id/button6"
